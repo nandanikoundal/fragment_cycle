@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation.findNavController
-import com.nandani.fragment_cycle.databinding.fragment1Binding
+import androidx.navigation.fragment.findNavController
+import com.nandani.fragment_cycle.databinding.FragmentFragment1Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,7 +22,7 @@ class fragment1 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    lateinit var binding: fragment1Binding
+    lateinit var binding: FragmentFragment1Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,14 +37,14 @@ class fragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding =fragment1Binding.inflate(layoutInflater)
+        binding =FragmentFragment1Binding.inflate(layoutInflater)
 
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.tv1.setOnClickListener {
+        binding.tv.setOnClickListener {
             var bundle = Bundle()
             bundle.putString("Test", "testing")
             findNavController().navigate(R.id.action_fragment1_to_fragment2, bundle)

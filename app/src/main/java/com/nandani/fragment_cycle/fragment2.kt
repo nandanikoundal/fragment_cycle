@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import com.nandani.fragment_cycle.databinding.fragment2
+import com.nandani.fragment_cycle.databinding.FragmentFragment2Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +23,7 @@ class fragment2 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    lateinit var binding: fragment2Binding
+    lateinit var binding: FragmentFragment2Binding
     lateinit var action :MainActivity
 
 

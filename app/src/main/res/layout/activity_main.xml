@@ -12,6 +12,6 @@
         android:id="@+id/navHost"
         app:defaultNavHost="true"
         app:navGraph="@navigation/activity_main"
-        android:name="androidx.navigation.fragment.fragment_1"/>
+        android:name="androidx.navigation.fragment.NavHostFragment"/>
 
 </LinearLayout>
